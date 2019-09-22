@@ -9,7 +9,7 @@
     "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsc && ts-node-dev --respawn --transpileOnly ./app/app.ts",
-    "prod": "tsc && nodemon ./build/app/app.js"
+    "prod": "tsc && node ./build/app/app.js"
   },
   "keywords": [
     "server",
@@ -27,11 +27,11 @@
     "express": "^4.17.1",
     "request": "^2.88.0",
     "ts-node-dev": "^1.0.0-pre.43",
-    "typescript": "^3.6.3"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.2",
+    "typescript": "^3.6.3",
     "@types/dotenv": "^6.1.1",
     "dotenv": "^8.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
   }
 }
